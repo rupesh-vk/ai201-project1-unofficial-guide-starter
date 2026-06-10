@@ -89,9 +89,9 @@ tradeoffs such as latency, storage cost, API cost, multilingual support, and whe
 | 2 | What do residents say about maintenance quality at Avalon Heights? | Reviews are mixed. Some residents praise the maintenance team for being fast and helpful, while others report unresolved issues such as mold, broken elevators, dirty facilities, and poor upkeep. |
 | 3 | Which apartments are described as being close to USF? | Multiple reviews for 42N, Avalon Heights, ON50, and other student-focused complexes mention convenient access to USF, nearby bus routes, or walking-distance locations. |
 | 4 | What safety concerns are mentioned by residents across the apartment complexes? | Residents mention unauthorized room entry, stolen packages, vehicle break-ins, smoking violations, security guard complaints, roommate conflicts, and concerns about management's response to safety issues. |
-| 5 | Which apartments receive positive feedback about staff and leasing experiences? | Venue at North Campus, 42N, ON50, and Avalon Heights contain reviews praising staff members, helpful leasing offices, smooth move-in experiences, and responsive maintenance teams. |
+| 5 | Which apartments which apartment has towing issues? | 42 North has a serious towing issue and flats at 4200, it is hard to obtain the guest pass. |
 
----
+--- 
 
 ## Anticipated Challenges
 
@@ -185,6 +185,9 @@ Raw Google Maps Reviews (.txt files)
 I used ChatGPT to help implement the ingestion and chunking pipeline. I provided the project requirements, Domain section, Chunking Strategy, and examples of raw Google Maps review files. ChatGPT helped generate ingest.py and chunk.py, while I tested the output, identified extraction issues, and refined the cleaning and chunking logic. I verified the implementation by checking extracted review counts and inspecting the generated JSON files.
 **Milestone 4 — Embedding and retrieval:**
 I plan to use ChatGPT to help implement embeddings and semantic retrieval. I will provide the Retrieval Approach, Architecture diagram, and chunk structure. I expect it to generate code using all-MiniLM-L6-v2 and ChromaDB for storing and retrieving relevant chunks. I will verify the implementation using my evaluation questions and manually inspect retrieval quality.
+
+Result before milestone 4:
+All three test queries returned relevant chunks related to the question being asked. After rebuilding the ChromaDB collection using cosine similarity and normalized embeddings, distance scores improved significantly and were generally below 0.5. The retrieved chunks contained direct evidence related to maintenance quality, proximity to USF, and safety concerns, indicating that the embedding and retrieval pipeline is functioning correctly.
 
 **Milestone 5 — Generation and interface:**
 I plan to use ChatGPT to help implement grounded answer generation and a simple query interface. I will provide the project requirements related to grounding and source attribution, along with examples of retrieved chunks. I expect it to generate code that answers questions using only retrieved reviews and cites the source documents. I will verify this by checking that responses remain grounded and do not introduce unsupported information.

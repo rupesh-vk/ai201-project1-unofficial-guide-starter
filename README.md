@@ -10,30 +10,33 @@
 ## Domain
 
 <!-- What topic or category of knowledge does your system cover?
-     Why is this knowledge valuable, and why is it hard to find through official channels?
-     Example: "Student reviews of CS professors at [university] — useful because official
-     course descriptions don't reflect teaching style, exam difficulty, or workload." -->
+    USF Off-Campus Housing Experiences
+
+The system will answer questions about student apartment complexes near USF using resident reviews and experiences collected from Google Reviews and similar public review sources.
+
+This knowledge is valuable because official apartment websites only show amenities and marketing information, while student reviews reveal practical issues such as maintenance responsiveness, safety concerns, parking availability, management quality, noise levels, and move-in experiences. -->
 
 ---
+```
 
+```
 ## Document Sources
 
 <!-- List every source you collected documents from.
      Be specific: include URLs, subreddit names, forum thread titles, or file names.
      Aim for variety — sources that together cover different subtopics or perspectives. -->
-
-| # | Source | Type | URL or file path |
+ # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | 42N Apartments Reviews | Google Maps Reviews | documents/42n_reviews.txt |
+| 2 | Avalon Heights Reviews | Google Maps Reviews | documents/avalon_heights_reviews.txt |
+| 3 | Cambridge Woods Reviews | Google Maps Reviews | documents/cambridge_woods_reviews.txt |
+| 4 | Halo 46 Reviews | Google Maps Reviews | documents/halo_46_reviews.txt |
+| 5 | Lark on 42nd Reviews | Google Maps Reviews | documents/lark_on_42nd_reviews.txt |
+| 6 | ON50 Reviews | Google Maps Reviews | documents/on50_reviews.txt |
+| 7 | Station 42 Reviews | Google Maps Reviews | documents/station_42_reviews.txt |
+| 8 | The Flats at 4200 Reviews | Google Maps Reviews | documents/the_flats_at_4200_reviews.txt |
+| 9 | The Ivy Reviews | Google Maps Reviews | documents/the_ivy_reviews.txt |
+| 10 | Venue at North Campus Reviews | Google Maps Reviews | documents/venue_north_campus_reviews.txt |
 
 ---
 
